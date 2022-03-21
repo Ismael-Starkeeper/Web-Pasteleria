@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@200&display=swap");
+
+/* Estilos globales */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.modificador {
+  width: 100%;
+  margin: auto;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../imagenes/dee-dave-8017964-min.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.cabecera {
+  width: 100%;
+}
+
+.logo {
+  margin-top: 30px;
+  width: 100%;
+  float: right;
+}
+
+.franja {
+  width: 100%;
+  margin-top: 40px;
+}
+.icon-menu {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: white;
+  display: block;
+  text-align: center;
+  border: 2px solid white;
+  font-size: 1.5em;
+}
+
+.menu {
+  width: 100%;
+  margin-top: 50px;
+  transition: height 3s linear;
+  z-index: 1000;
+  height: 0;
+  overflow: hidden;
+}
+
+.mostrar {
+  height: 300px;
+}
+
+.lista {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 20px;
+  background: #a2416b;
+}
+
+.link:hover {
+  background: #ff7777;
+}
+
+.seleccion {
+  background: #ff7777;
+}
+
+.texto {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.titulo {
+  color: white;
+  font-family: "Pacifico", cursive;
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-left: 70px;
+}
+
+/* terminan estilos globales*/
+
+/*estilos bienvenida */
+
+.titulo_principal {
+  width: 100%;
+  text-align: center;
+  color: #e63e6d;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.titulo_principal:after {
+  display: block;
+  content: "";
+  width: 200px;
+  height: 4px;
+  background: #e63e6d;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.bienvenida {
+  width: 100%;
+  margin: 10px;
+}
+
+.imagen_mujer {
+  height: 100vh;
+  margin: 10px;
+}
+
+.frase_bienvenida {
+  width: 100%;
+  text-align: center;
+}
+
+.promo {
+  width: 100%;
+  margin: 5px;
+}
+
+.promo [class*="icon-"]:before {
+  color: #e63e6d;
+  font-size: 80px;
+  display: block;
+  text-align: center;
+}
+.titulo_promo {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.texto_promo {
+  line-height: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* terminan estilos bienvenida */
+
+/*Inician estilos sucursales*/
+.sucursales {
+  width: 100%;
+}
+
+.titulo_sucursales {
+  width: 100%;
+  text-align: center;
+  color: #e63e6d;
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.titulo_sucursales:after {
+  display: block;
+  content: "";
+  width: 200px;
+  height: 4px;
+  background: #e63e6d;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.tiendas {
+  width: 100%;
+}
+
+.titulo_tiendas {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.img_tiendas {
+  width: 100%;
+}
+
+.lista_tienda {
+  list-style: none;
+  line-height: 30px;
+}
+
+.tiendas [class*="icon-asterisco"]:before {
+  margin: 10px;
+  position: relative;
+  color: #e63e6d;
+}
+
+/*terminan estilos sucursales*/
+
+/*Inician estilos productos*/
+.especialidades {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../imagenes/pexels-elle-hughes-2696064-min.jpg);
+  background-size: cover;
+  color: white;
+}
+
+.titulo_especialidades {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 35px;
+  font-family: "Pacifico", cursive;
+  font-weight: 100;
+}
+
+.titulo_especialidades:after {
+  display: block;
+  content: "";
+  width: 250px;
+  height: 4px;
+  background: white;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.especiales {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.texto_especialidades {
+  margin: 10px;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.pasteles {
+  text-align: center;
+}
+
+.img_producto {
+  width: 170px;
+  height: 170px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.nombre_producto {
+  font-family: "Pacifico", cursive;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+/* terminan estilos productos*/
+
+/* estilos footer*/
+footer {
+  background: #4c0070;
+  color: white;
+}
+
+.pie {
+  width: 100%;
+}
+
+.item_pie {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.derechos {
+  width: 100%;
+  text-align: center;
+  display: block;
+  padding: 20px;
+}
+/* terminan estilos footer */
+
+/* inician estilos responsive*/
+
+@media screen and (min-width: 480px) {
+  .titulo {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .titulo {
+    font-size: 65px;
+  }
+  .promo {
+    width: 45%;
+    margin: 10px;
+  }
+
+  .tiendas {
+    width: 45%;
+    margin: 10px;
+  }
+  .pasteles {
+    width: 45%;
+    margin: 10px;
+  }
+
+  .img_producto {
+    align-items: center;
+  }
+  .item_pie {
+    width: 45%;
+    margin: 10px;
+  }
+  .pie {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modificador {
+    width: 1000px;
+  }
+  .titulo {
+    font-size: 60px;
+  }
+  .icon-menu {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin-top: -150px;
+    margin-left: 50%;
+  }
+  .link {
+    margin-left: 15px;
+  }
+  .mision {
+    align-items: flex-start;
+  }
+  .imagen_mujer {
+    width: 100%;
+    margin: 20px;
+  }
+  .texto_mision {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .modificador {
+    width: 1400px;
+  }
+  .promo {
+    width: 23%;
+  }
+  .principal {
+    align-items: flex-start;
+  }
+  .texto_mision {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .tiendas {
+    width: 23%;
+  }
+  .pasteles {
+    width: 28%;
+  }
+  .productos {
+    align-items: flex-start;
+  }
+  .item_pie {
+    width: 100%;
+  }
+}

@@ -1,0 +1,93 @@
+.header {
+  height: 50vh;
+}
+
+.productos {
+  width: 100%;
+}
+
+.titulo_productos {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: #e63e6d;
+}
+
+.titulo_productos:after {
+  display: block;
+  content: "";
+  width: 200px;
+  height: 4px;
+  background: #e63e6d;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.carta {
+  width: 100%;
+}
+
+.img_postre {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.titulo_carta {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #e63e6d;
+}
+
+.titulo_productos:after {
+  display: block;
+  content: "";
+  width: 200px;
+  height: 4px;
+  background: #e63e6d;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.Precio_postre {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #e63e6d;
+}
+
+/*Estilos responsive*/
+@media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 768px) {
+  .carta {
+    width: 45%;
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .carta {
+    width: 30%;
+  }
+  .productos {
+    align-items: flex-start;
+  }
+  .modificador {
+    width: 1000px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .modificador {
+    width: 1400px;
+  }
+  .carta {
+    width: 30%;
+  }
+}
