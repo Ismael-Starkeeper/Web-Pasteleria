@@ -11,7 +11,7 @@
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 30px;
+  font-size: 40px;
   color: #e63e6d;
 }
 
@@ -54,4 +54,253 @@
 .link_info[class*="icon-"]:before {
   margin: 10px;
   font-size: 20px;
+}
+
+/* inician estilos encuentranos */
+
+.encuentranos {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.titulo_encuentranos {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: #e63e6d;
+}
+
+.titulo_encuentranos:after {
+  display: block;
+  content: "";
+  width: 200px;
+  height: 4px;
+  background: #e63e6d;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.encuentranos-tarjetas {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+}
+
+.encuentranos-content {
+  width: 20%;
+  height: 500px;
+}
+
+.encuentranos-content:nth-child(1) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../imagenes/pexels-andres-ayrton-6578899.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.nombre_pasteleria {
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 20px;
+  color: white;
+  font-family: "Pacifico", cursive;
+  font-size: 30px;
+}
+
+.frase_encuentranos {
+  width: 100%;
+  color: white;
+  margin-left: 20px;
+  margin-top: 100%;
+  margin-bottom: 30px;
+}
+
+.encuentranos-content:nth-child(2) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../imagenes/pexels-robert-tarona-jr-5018894.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.nombre_social {
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 30px;
+}
+.fa-brands {
+  text-align: center;
+}
+
+.instagram:hover {
+  transform: scale(1.2);
+}
+
+.instagram {
+  font-size: 60px;
+  align-content: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.instagram a {
+  color: #e4405f;
+}
+
+.usuario {
+  color: white;
+  text-align: center;
+  margin-top: 130px;
+}
+
+.encuentranos-content:nth-child(3) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../imagenes/pexels-anastasia-belousova-10267353.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.twitter:hover {
+  transform: scale(1.2);
+}
+
+.twitter {
+  font-size: 60px;
+  align-content: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.twitter a {
+  color: #55acee;
+}
+
+.encuentranos-content:nth-child(4) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../imagenes/pexels-anna-nekrashevich-7552064.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.github:hover {
+  transform: scale(1.2);
+}
+.github {
+  font-size: 60px;
+  align-content: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.github a {
+  color: #000000;
+}
+
+/* terminan estilos encuentranos */
+
+/* estilos responsive */
+@media screen and (min-width: 480px) {
+  .info_contacto {
+    margin: 25px;
+  }
+
+  .encuentranos-tarjetas {
+    flex-flow: row wrap;
+  }
+
+  .encuentranos-content {
+    width: 50%;
+  }
+}
+/* terminan estilos responsive */
+
+@media screen and (min-width: 768px) {
+  .nombre_pasteleria {
+    font-size: 38px;
+  }
+
+  .frase_encuentranos {
+    margin-top: 50%;
+    font-size: 25px;
+  }
+
+  .nombre_social {
+    margin-top: 43px;
+  }
+
+  .fa-instagram {
+    font-size: 80px;
+  }
+
+  .fa-twitter {
+    font-size: 80px;
+  }
+
+  .fa-github {
+    font-size: 80px;
+  }
+
+  .usuario {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modificador {
+    width: 1000px;
+  }
+
+  .encuentranos-tarjetas {
+    width: 100%;
+  }
+
+  .encuentranos-content {
+    width: 23%;
+  }
+
+  .nombre_pasteleria {
+    font-size: 30px;
+  }
+
+  .frase_encuentranos {
+    margin-top: 200px;
+    font-size: 25px;
+  }
+
+  .usuario {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .modificador {
+    width: 1400px;
+  }
+
+  .info_texto {
+    font-size: 28px;
+  }
+
+  .encuentranos-content {
+    height: 100vh;
+  }
+
+  .nombre_pasteleria {
+    font-size: 45px;
+  }
+
+  .frase_encuentranos {
+    font-size: 23px;
+  }
+
+  .nombre_social {
+    font-size: 25px;
+  }
+
+  .usuario {
+    font-size: 25px;
+  }
 }
