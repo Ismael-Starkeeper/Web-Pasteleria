@@ -62,6 +62,82 @@
   color: #e63e6d;
 }
 
+/* estilos carousel */
+.carousel {
+  width: 100%;
+  margin-top: 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)),
+    url(../imagenes/pexels-adam-dubec-1595494.jpg);
+  background-size: cover;
+}
+
+.titulo_carousel {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: #e63e6d;
+}
+
+.titulo_carousel:after {
+  display: block;
+  content: "";
+  width: 200px;
+  height: 4px;
+  background: #e63e6d;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.carousel_contenedor {
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.producto_carousel {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 25px;
+  font-family: "Pacifico";
+}
+
+.fa-solid {
+  font-size: 30px;
+}
+
+.fa-solid {
+  font-size: 30px;
+}
+
+.carousel_anterior,
+.carousel_siguiente {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  top: calc(40%);
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  background: none;
+  color: #e63e6d;
+}
+
+.carousel_anterior {
+  left: -50px;
+}
+
+.carousel_siguiente {
+  right: -50px;
+}
+
+/* terminan estilos carousel */
+
 /*Estilos responsive*/
 @media screen and (min-width: 480px) {
 }

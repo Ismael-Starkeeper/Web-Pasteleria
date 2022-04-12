@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pasteleria</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -13,13 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@200&display=swap"
       rel="stylesheet"
     />
-    <!-- Glider.css -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css"
     />
-    <!-- Glider.css -->
-
     <link rel="stylesheet" href="css/productos.css" />
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="stylesheet" href="styles.css" />
@@ -51,7 +49,6 @@
     <main>
       <section class="productos flex modificador">
         <h2 class="titulo_productos">Nuestros Productos</h2>
-
         <article class="carta">
           <img
             src="imagenes/pexels-quang-nguyen-vinh-2144200-min.jpg"
@@ -135,14 +132,127 @@
           <h2 class="Precio_postre">Desde &nbsp; &nbsp; $400</h2>
         </article>
       </section>
+      <section class="carousel">
+        <h1 class="titulo_carousel">Nuestros especiales</h1>
+        <div class="flex modificador">
+          <div class="carousel_contenedor">
+            <button aria-label="anterior" class="carousel_anterior">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="carousel_lista">
+              <div class="carousel_elemento">
+                <img
+                  src="imagenes/pexels-alisha-mishra-1343504-min.jpg"
+                  alt=""
+                />
+                <h3 class="producto_carousel">Helado de avellana</h3>
+              </div>
+
+              <div class="carousel_lista">
+                <img
+                  src="imagenes/pexels-alisha-mishra-1346217-min.jpg"
+                  alt=""
+                />
+                <h3 class="producto_carousel">Tartina de durazno</h3>
+              </div>
+
+              <div class="carousel_lista">
+                <img src="imagenes/pexels-dima-valkov-3740196-min.jpg" alt="" />
+                <h3 class="producto_carousel">Pastel tres chocolates</h3>
+              </div>
+              <div class="carousel_lista">
+                <img src="imagenes/pexels-dana-tentis-683499-min.jpg" alt="" />
+                <h3 class="producto_carousel">
+                  Brownie de chocolate <br />
+                  y helado moka
+                </h3>
+              </div>
+              <div class="carousel_lista">
+                <img src="imagenes/pexels-ella-olsson-3026801-min.jpg" alt="" />
+                <h3 class="producto_carousel">Flan vainilla y naranja</h3>
+              </div>
+              <div class="carousel_lista">
+                <img src="imagenes/pexels-javon-swaby-1829423-min.jpg" alt="" />
+                <h3 class="producto_carousel">Pastel de cajeta</h3>
+              </div>
+              <div class="carousel_lista">
+                <img src="imagenes/pexels-jer-chung-2156698-min.jpg" alt="" />
+                <h3 class="producto_carousel">Helado de pistache</h3>
+              </div>
+              <div class="carousel_lista">
+                <img src="imagenes/pexels-ella-olsson-3026804-min.jpg" alt="" />
+                <h3 class="producto_carousel">
+                  Brownie de chocolate <br />
+                  y frambuesa
+                </h3>
+              </div>
+              <div class="carousel_lista">
+                <img
+                  src="imagenes/pexels-magda-ehlers-6364473-min.jpg"
+                  alt=""
+                />
+                <h3 class="producto_carousel">Cheesecake de ciruela</h3>
+              </div>
+              <div class="carousel_lista">
+                <img
+                  src="imagenes/pexels-maahid-photos-4435689-min.jpg"
+                  alt=""
+                />
+                <h3 class="producto_carousel">Brownie de nuez y coco</h3>
+              </div>
+              <div class="carousel_lista">
+                <img src="imagenes/pexels-ella-olsson-3026807-min.jpg" alt="" />
+                <h3 class="producto_carousel">
+                  Tartaletas de philadelphia <br />
+                  y frutos rojos
+                </h3>
+              </div>
+              <div class="carousel_lista">
+                <img
+                  src="imagenes/pexels-igor-ovsyannykov-205961-min.jpg"
+                  alt=""
+                />
+                <h3 class="producto_carousel">Gran variedad de donas</h3>
+              </div>
+              <div class="carousel_lista">
+                <img src="imagenes/pexels-ella-olsson-3026810-min.jpg" alt="" />
+                <h3 class="producto_carousel">
+                  Helado de chocolate <br />
+                  y granada
+                </h3>
+              </div>
+              <div class="carousel_lista">
+                <img
+                  src="imagenes/pexels-asya-vlasova-3065576-min.jpg"
+                  alt=""
+                />
+                <h3 class="producto_carousel">Cheesecake de frambuesa</h3>
+              </div>
+              <div class="carousel_lista">
+                <img
+                  src="imagenes/pexels-krisztina-papp-2586924-min.jpg"
+                  alt=""
+                />
+                <h3 class="producto_carousel">Helado de nuez y vainilla</h3>
+              </div>
+            </div>
+            <button aria-label="siguiente" class="carousel_siguiente">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div role="tablist" class="carousel_indicadores"></div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="pie flex modificador">
         <div class="item_pie">
-          <span class="derechos">@Ism_Diaz</span>
+          <span class="derechos"> Hecho con mucho por Ismael-Starkeeper </span>
         </div>
       </div>
     </footer>
     <script src="menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
